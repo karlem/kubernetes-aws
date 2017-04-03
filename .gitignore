@@ -1,0 +1,5 @@
+node_modules
+local-*
+kube-aws-assets/*
+!kube-aws-assets/.gitkeep
+npm-debug*

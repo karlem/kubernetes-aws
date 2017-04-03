@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  helloapp:
+    build: ./hello-app
+    image: kube/hello-app
+    volumes:
+      - ./hello-app/src:/usr/app/src
+    environment:
+      BUILD_ENV: "development"
+    ports:
+      - "8000:8080"
